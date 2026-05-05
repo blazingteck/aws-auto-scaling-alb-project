@@ -37,3 +37,21 @@ User → Application Load Balancer → Auto Scaling Group → EC2 Instances → 
 🎯 Outcome
 
 Successfully built a resilient, scalable AWS infrastructure aligned with cloud engineering best practices.
+
+⚠️ Challenges & Solutions
+
+- Faced issue with instances not passing health checks  
+  → Resolved by correcting target group port and security group rules  
+
+- Auto Scaling did not trigger initially  
+  → Adjusted CPU threshold and verified CloudWatch metrics  
+
+- Load Balancer not routing traffic properly  
+  → Fixed listener configuration and target group attachment  
+
+📚 What I Learned
+
+- How Auto Scaling reacts to real CPU load  
+- Importance of health checks in maintaining availability  
+- How ALB distributes traffic across multiple instances  
+- How to design highly available systems in AWS
